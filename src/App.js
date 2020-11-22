@@ -1,16 +1,32 @@
 import "./App.css";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <h1 className="header-title">Simple HTML</h1>
-      <ul>
-        <li className="header__link">HTML</li>
-        <li className="header__link">CSS</li>
-        <li className="header__link">JS</li>
-      </ul>
+    <div>
+      <Header />
+      <Technologies />
     </div>
   );
-}
+};
+
+const Technologies = () => {
+  return (
+    <ul>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JS</li>
+    </ul>
+  );
+};
+
+const Header = () => {
+  return (
+    <div>
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Team</a>
+    </div>
+  );
+};
 
 export default App;
